@@ -19,9 +19,14 @@ gem 'sass-rails', '~> 5.0', '>= 5.0.6'
 
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.1'
 
-#gem 'font-awesome-sass', '~> 4.7'
-
 gem 'sprockets', '~> 3.7', '>= 3.7.1'
+
+# gem 'bootstrap-sass', '~> 3.3.5.1'
+# gem 'sass-rails', '~> 5.0', '>= 5.0.4'
+# gem "font-awesome-rails"
+# gem 'sprockets', '~> 3.0'
+
+
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
