@@ -13,18 +13,22 @@ gem 'coffee-rails', '~> 4.1.0'
 # gem 'therubyracer', platforms: :ruby
 
 
-gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
+# gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 
-gem 'sass-rails', '~> 5.0', '>= 5.0.6'
+# gem 'sass-rails', '~> 5.0', '>= 5.0.6'
 
-gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.1'
+# gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.1'
 
-gem 'sprockets', '~> 3.7', '>= 3.7.1'
+# gem 'sprockets', '~> 3.7', '>= 3.7.1'
 
-# gem 'bootstrap-sass', '~> 3.3.5.1'
-# gem 'sass-rails', '~> 5.0', '>= 5.0.4'
-# gem "font-awesome-rails"
-# gem 'sprockets', '~> 3.0'
+gem 'bootstrap-sass', '~> 3.3.5.1'
+gem 'sass-rails', '~> 5.0', '>= 5.0.4'
+gem "font-awesome-rails"
+gem 'sprockets', '~> 3.0'
+
+gem 'mail_form'
+
+gem 'simple_form'
 
 
 
