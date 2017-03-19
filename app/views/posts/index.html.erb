@@ -113,10 +113,8 @@
                 <%= simple_form_for @contact, :html => {:class => 'form-horizontal'} do |f| %>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
-                                <div class="field">
-                                   
-                                    <%= f.input :name, :required => true, :placeholder => "Name", :type => "text", :class => "form-control" %>
-                                </div>
+                                   <label for="name">Name</label>
+                                    <%= f.text_field :name, :required => true, :placeholder => "Name", :type => "text", :class => "form-control", :id => "name" %>
                                 <p class="help-block text-danger"></p>
                                 
                             </div>
@@ -124,8 +122,8 @@
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <div class="field">
-                                   
-                                    <%= f.input :email, :required => true, :placeholder => "Email", :type => "text", :class => "form-control" %>
+                                  <label for="email">Email</label>
+                                    <%= f.email_field :email, :required => true, :placeholder => "Email", :type => "text", :class => "form-control", :id => "email" %>
                                 </div>
                                 <p class="help-block text-danger"></p>
                             </div>
@@ -133,8 +131,8 @@
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                <div class="field">
-                                   
-                                    <%= f.input :number, :required => true, :placeholder => "Number", :type => "tel", :class => "form-control" %>
+                                   <label for="number">Email</label>
+                                    <%= f.telephone_field :number, :required => true, :placeholder => "Number", :type => "tel", :class => "form-control", :id => "number" %>
                                 </div>
                                 <p class="help-block text-danger"></p>
                             </div>
@@ -142,8 +140,8 @@
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                   <div class="field">
-                                      
-                                      <%= f.input :message, :required => true, :placeholder => "Message", :as => :text, :rows => 5, :class => "form-control" %>
+                                    <label for="name">message</label>
+                                      <%= f.text_area :message, :required => true, :placeholder => "Message", :as => :text, :rows => 5, :class => "form-control", :id => "message" %>
                                   </div>
                                 <p class="help-block text-danger"></p>
                             </div>
