@@ -50,7 +50,7 @@ Rails.application.configure do
     :user_name      =>  ENV["GMAIL_USERNAME"],
     :password       =>  ENV["GMAIL_PASSWORD"],
     :domain         =>  ENV["GMAIL_DOMAIN"],
-    :enable_starttls_auto => true,    
+    :enable_starttls_auto => true,   
     :openssl_verify_mode => 'none'
   }
 end
