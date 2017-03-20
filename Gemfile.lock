@@ -91,6 +91,8 @@ GEM
       warden (~> 1.2.3)
     erubis (2.7.0)
     execjs (2.7.0)
+    figaro (1.1.1)
+      thor (~> 0.14)
     font-awesome-rails (4.7.0.1)
       railties (>= 3.2, < 5.1)
     formtastic (3.1.5)
@@ -250,6 +252,7 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.1.0)
   devise (~> 4.2)
+  figaro
   font-awesome-rails (~> 4.7, >= 4.7.0.1)
   inherited_resources (~> 1.7)
   jbuilder (~> 2.0)
