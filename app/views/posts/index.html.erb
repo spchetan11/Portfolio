@@ -110,7 +110,7 @@
                 <div class="col-lg-8 col-lg-offset-2">
                     <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
                     <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                <%= simple_form_for @contact, :html => {:class => 'form-horizontal'} do |f| %>
+                <%= simple_form_for @contact, :html => {:class => "form-horizontal",:remote => "true", :id => "form-horizontal"}  do |f| %>
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                    <label for="name">Name</label>
@@ -145,12 +145,15 @@
                                   </div>
                                 <p class="help-block text-danger"></p>
                             </div>
+                             <div class= "hidden">
+                                <%= f.input :nickname, :hint => 'Leave this field blank!' %>
+                             </div>
                         </div>
                         <br>
                         <div id="success"></div>
                         <div class="row">
                             <div class="form-group col-xs-12">
-                                <%= f.button :submit, 'Send', :class=> "btn btn-success btn-lg" %>                            
+                                <%= f.button :submit, 'Send', :class=> "btn btn-success btn-lg", id: "btn" %>                            
                             </div>
                         </div>
                     <%end%>
