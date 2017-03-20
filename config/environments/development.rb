@@ -49,7 +49,7 @@ Rails.application.configure do
     :authentication => :plain,
     :user_name      =>  ENV["GMAIL_USERNAME"],
     :password       =>  ENV["GMAIL_PASSWORD"],
-    :domain         => 'localhost:3000',
+    :domain         =>  ENV["GMAIL_DOMAIN"],
     :enable_starttls_auto => true,    
     :openssl_verify_mode => 'none'
   }
